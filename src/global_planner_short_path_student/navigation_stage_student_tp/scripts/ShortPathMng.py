@@ -126,7 +126,6 @@ class ShortPathMng:
 
     def inflate_map(self, map, map_resolution):
         new_inflated_map = [[0 for x in range(self.map_height)] for x in range(self.map_width)]
-        ### TODO
         ### map :original map ( like a grid[][] )
         ### map_resolution :original map resolution (e.g 0.05)
         ###
@@ -140,7 +139,7 @@ class ShortPathMng:
                     for k in range((i - factor), (i + factor)):
                         for l in range((j - factor), (j + factor)):
                             if (k < len(map)) and (k > -1) and (l < len(map[k])) and (l > -1):
-                                new_inflated_map[k][l] = -100
+                                new_inflated_map[k][l] = self.MAP_OBSTACLE_VALUE
         # return map
         ## UNCOMMENT LINE BELLOW TO TEST YOUR INFLATED MAP
         return new_inflated_map
@@ -418,8 +417,8 @@ if __name__ == '__main__':
         # FIXME Check private or global ros param
         # RESOLUTION = rospy.get_param('~SHORT_PATH_RESOLUTION', 8)
         RESOLUTION = rospy.get_param('~SHORT_PATH_RESOLUTION', 4)
-        shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'GREEDY_BEST_FIRST_SEARCH')
-        #shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'WAVEFRONT')
+        #shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'GREEDY_BEST_FIRST_SEARCH')
+        shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'DIJKSTRA')
         isLocalPlanner = rospy.get_param('~LOCAL_PLANNER_USED', True)
         inflate_radius = rospy.get_param('~INFLATE_RADIUS', 0.3)
         print("------>Used SHORT_PATH_METHOD: " + str(shortPathMethodeSelected))
