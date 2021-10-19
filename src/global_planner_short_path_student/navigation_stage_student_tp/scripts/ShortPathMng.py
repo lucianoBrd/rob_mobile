@@ -418,7 +418,7 @@ if __name__ == '__main__':
         # RESOLUTION = rospy.get_param('~SHORT_PATH_RESOLUTION', 8)
         RESOLUTION = rospy.get_param('~SHORT_PATH_RESOLUTION', 4)
         #shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'GREEDY_BEST_FIRST_SEARCH')
-        shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'ASTAR')
+        shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'DIJKSTRA')
         isLocalPlanner = rospy.get_param('~LOCAL_PLANNER_USED', True)
         inflate_radius = rospy.get_param('~INFLATE_RADIUS', 0.3)
         print("------>Used SHORT_PATH_METHOD: " + str(shortPathMethodeSelected))

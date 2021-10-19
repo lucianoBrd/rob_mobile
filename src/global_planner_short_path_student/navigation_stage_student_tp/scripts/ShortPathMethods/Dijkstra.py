@@ -66,7 +66,7 @@ class Dijsktra(AbstractShortPath):
 
                     self.createFontierUnitMarkerPt(n, marker_container)
 
-                    current_score = score[str(s['x']) + '_' + str(s['y'])] + self.computeDist(matrix,n,target)
+                    current_score = score[str(s['x']) + '_' + str(s['y'])] + 1 #self.computeDist(matrix,n,target)
 
                     print current_score
 
