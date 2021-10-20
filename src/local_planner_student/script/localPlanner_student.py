@@ -230,6 +230,20 @@ class LocalPlanner:
         if len(self.pathPoses) > 0 :
 
             #TODO for students : calculate distCurTarget and angle. To compute shortest angle use method shortestAngleDiff defined before
+            x_pos = self.curPose2D.x
+            y_pos = self.curPose2D.y
+            theta_pos = self.curPose2D.theta
+
+            x_target = self.pathPoses[0].pose.position.x
+            y_target = self.pathPoses[0].pose.position.y
+
+            angle = atan2(y_target-y_pos, x_target-x_pos)
+
+            angle = self.shortestAngleDiff(angle, theta_pos)
+
+            distCurTarget = sqrt((x_target - x_pos) * (x_target - x_pos) + (y_target - y_pos) * (y_target - y_pos))
+
+            #rospy.loginfo("dist = %.2f    angle = %.2f" % (distCurTarget, angle))
 
             return (distCurTarget, angle)
         
@@ -246,7 +260,16 @@ class LocalPlanner:
         if len(self.pathPoses) > 0 :
 
             #TODO for students : calculate angle . To compute shortest angle use method shortestAngleDiff defined before
+            quaternion = (
+                self.pathPoses[-1].pose.orientation.x,
+                self.pathPoses[-1].pose.orientation.y,
+                self.pathPoses[-1].pose.orientation.z,
+                self.pathPoses[-1].pose.orientation.w)
+            euler = tf.transformations.euler_from_quaternion(quaternion)
 
+
+            angle = self.shortestAngleDiff(euler[2], self.curPose2D.theta)
+            
             return angle       
         else:
             return 0
