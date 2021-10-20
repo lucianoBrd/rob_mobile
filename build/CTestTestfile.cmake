@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("global_planner_short_path_student/navigation_stage_student_tp")
+subdirs("local_planner_student")

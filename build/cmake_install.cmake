@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/build/gtest/cmake_install.cmake")
   include("/fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/build/global_planner_short_path_student/navigation_stage_student_tp/cmake_install.cmake")
+  include("/fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/build/local_planner_student/cmake_install.cmake")
 
 endif()
 

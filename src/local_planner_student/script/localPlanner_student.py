@@ -104,7 +104,7 @@ class LocalPlanner:
         self.curPose2D.y = odom.pose.pose.position.y
         self.curPose2D.theta = euler[2]
 
-        rospy.loginfo("Odom => X: %.2f \t Y: %.2f \t theta: %.2f"  % (self.curPose2D.x, self.curPose2D.y, self.curPose2D.theta ) )
+        #rospy.loginfo("Odom => X: %.2f \t Y: %.2f \t theta: %.2f"  % (self.curPose2D.x, self.curPose2D.y, self.curPose2D.theta ) )
 
                 
     def scanCallback(self, scan):
@@ -151,9 +151,16 @@ class LocalPlanner:
             now = rospy.Time(0)
             listener.waitForTransform(req.pathToGoal.header.frame_id, "/odom", now, rospy.Duration(2.0))
      
+            (pos, quat) = listener.lookupTransform(req.pathToGoal.header.frame_id, "/odom", now)
+            x = pos[0]
+            y = pos[1]
+
             for i in xrange( len(req.pathToGoal.poses) ) : 
                 
                 #TODO for students : Apply tranform on each PoseStamped with transformPose method out of tf.TransformListener()
+
+                req.pathToGoal.poses[i].pose.position.x -= x  # Apply tranform in x
+                req.pathToGoal.poses[i].pose.position.y -= y  # Apply tranform in y
 
                 rospy.loginfo("# Pose %d : x = %.2f   y = %.2f" % (i, req.pathToGoal.poses[i].pose.position.x, req.pathToGoal.poses[i].pose.position.y) )
 
