@@ -1,0 +1,1 @@
+/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/.private/turtlebot_stdr/etc/catkin/profile.d/25.turtlebot-stdr.sh

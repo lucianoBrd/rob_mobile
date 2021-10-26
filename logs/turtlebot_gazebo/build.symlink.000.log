@@ -1,0 +1,4 @@
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/lib/pkgconfig/turtlebot_gazebo.pc
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/etc/catkin/profile.d/25.turtlebot-gazebo.sh
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/share/turtlebot_gazebo/cmake/turtlebot_gazeboConfig-version.cmake
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/share/turtlebot_gazebo/cmake/turtlebot_gazeboConfig.cmake

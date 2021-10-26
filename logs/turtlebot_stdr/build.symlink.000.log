@@ -1,0 +1,4 @@
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/lib/pkgconfig/turtlebot_stdr.pc
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/etc/catkin/profile.d/25.turtlebot-stdr.sh
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/share/turtlebot_stdr/cmake/turtlebot_stdrConfig.cmake
+Symlinking /fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel/share/turtlebot_stdr/cmake/turtlebot_stdrConfig-version.cmake

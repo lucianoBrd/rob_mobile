@@ -1,2 +1,0 @@
-global_planner_short_path_student/navigation_stage_student_tp:local_planner_student
--DCATKIN_DEVEL_PREFIX=/fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/fs03/share/users/aykel.cheniour/home/Bureau/ROB mob/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install
+
+Name: turtlebot_description_gazebo
+Description: Description of turtlebot_description_gazebo
+Version: 2.2.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
