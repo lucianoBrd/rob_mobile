@@ -45,25 +45,22 @@ if __name__ == '__main__':
             
     while not rospy.is_shutdown():
         try:
-            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-0.1222,'y':-5.526},'orientation':{'z':0,'w':1}}})
+            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-15.513,'y':1.743},'orientation':{'z':0,'w':1}}})
 
-            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':6.45,'y':-5.526},'orientation':{'z':1,'w':0}}})
+            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-11.982,'y':1.743},'orientation':{'z':1,'w':0}}})
 
             result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-14.666,'y':-5.168},'orientation':{'z':0,'w':1}}})
 
             result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-9.4343,'y':-5.526},'orientation':{'z':1,'w':0}}})
 
+            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-2.72,'y':-5.23},'orientation':{'z':1,'w':0}}})
+
+            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-6.181,'y':-5.526},'orientation':{'z':0,'w':1}}})
+
             result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-0.1222,'y':-5.526},'orientation':{'z':0,'w':1}}})
 
             result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':6.45,'y':-5.526},'orientation':{'z':1,'w':0}}})
 
-            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-15.513,'y':1.743},'orientation':{'z':0,'w':1}}})
-
-            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-11.982,'y':1.743},'orientation':{'z':1,'w':0}}})
-
-            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-2.72,'y':-5.23},'orientation':{'z':1,'w':0}}})
-
-            result = movebase_client({'header':{'frame_id':'map'},'pose':{'position':{'x':-6.181,'y':-5.526},'orientation':{'z':0,'w':1}}})
             
             
         except rospy.ROSInterruptException:
