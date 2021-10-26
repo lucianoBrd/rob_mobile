@@ -16,8 +16,9 @@ from ShortPathMethods.WaveFront import WaveFront
 from ShortPathMethods.Dijkstra import Dijsktra
 from ShortPathMethods.GreedyBestFirstSearch import GreedyBestFirstSearch
 from ShortPathMethods.AStar import AStar
-# from local_planner_student.srv import Path as Path_Planner
+from local_planner_student.srv import Path as Path_Planner
 from Queue import Queue, LifoQueue
+from copy import deepcopy
 
 class ShortPathMng:
     mapArray = ""
@@ -70,16 +71,15 @@ class ShortPathMng:
         ### create the link between our navigation ros node and our local_planner
         ### self.local_planner_service: service container to call the local_planner node
         ###
-        #
-        #
-        #
-        #
-        #                       TODO
-        #
-        #
-        #
-        #
-        ###
+        print "Wait for service"
+        rospy.wait_for_service('/move_to/pathGoal')
+        print "Service found"
+
+        print "Connect to service"
+
+        self.local_planner_service = rospy.ServiceProxy('/move_to/pathGoal', Path_Planner)
+
+        print "Service proxy created"
 
     # ******************************************************************************************
     # ************************************   MAP PROCESSING   **********************************
@@ -379,17 +379,22 @@ class ShortPathMng:
             ### goalQueue: queue of goal to acheive (Posestamped ros message)
             ###
             ### self.local_planner_service: service to call the local planner ( TODO need to be created on the ShortPathMng constructor)
-            #
-            #
-            #
-            #
-            #                       TODO
-            #
-            #
-            #
-            #
-            ###
-            print('')
+            
+            pm = Path()
+            pm.header.frame_id = "/map"
+            pm.header.stamp = rospy.Time.now()
+
+            while not goalQueue.empty():
+                ps = goalQueue.get()
+                ps.header.frame_id = pm.header.frame_id
+                ps.header.stamp = rospy.Time.now()
+                pm.poses.append(deepcopy(ps))
+
+            #rospy.loginfo(str(isPathOnService) + " pm : " + str(pm))
+
+            fb = self.local_planner_service(pm)
+
+            print "Path sent to service"
         else:
             while not goalQueue.empty():
                 self.pub_goal.publish(goalQueue.get())
@@ -418,7 +423,7 @@ if __name__ == '__main__':
         # RESOLUTION = rospy.get_param('~SHORT_PATH_RESOLUTION', 8)
         RESOLUTION = rospy.get_param('~SHORT_PATH_RESOLUTION', 4)
         #shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'GREEDY_BEST_FIRST_SEARCH')
-        shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'DIJKSTRA')
+        shortPathMethodeSelected = rospy.get_param('~SHORT_PATH_METHOD', 'ASTAR')
         isLocalPlanner = rospy.get_param('~LOCAL_PLANNER_USED', True)
         inflate_radius = rospy.get_param('~INFLATE_RADIUS', 0.3)
         print("------>Used SHORT_PATH_METHOD: " + str(shortPathMethodeSelected))
