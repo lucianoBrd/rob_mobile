@@ -8,8 +8,8 @@ from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
 def movebase_client(typeA):
 
-    a = {'header':{'frame_id':'map'},'pose':{'position':{'x':-14.666,'y':-5.168},'orientation':{'z':0,'w':1}}}
-    b = {'header':{'frame_id':'map'},'pose':{'position':{'x':-9.4343,'y':-5.526},'orientation':{'z':1,'w':0}}}
+    a = {'header':{'frame_id':'map'},'pose':{'position':{'x':-2.72,'y':-5.23},'orientation':{'z':1,'w':0}}}
+    b = {'header':{'frame_id':'map'},'pose':{'position':{'x':-6.181,'y':-5.526},'orientation':{'z':0,'w':1}}}
 
     # Create an action client called "move_base" with action definition file "MoveBaseAction"
     client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
@@ -53,17 +53,14 @@ if __name__ == '__main__':
     rospy.init_node('movebase_client_py')
     
     a = True
-    
-    try:
         
-        while True:
-            try:
-                result = movebase_client(a)
-                
-                if result:
-                    a = not a
-                    rospy.loginfo("Goal execution done!")
-            except rospy.ROSInterruptException:
-                rospy.loginfo("Navigation test finished.")
-    except KeyboardInterrupt:
-        rospy.loginfo('interrupted!')
+    while not rospy.is_shutdown():
+        try:
+            result = movebase_client(a)
+            
+            if result:
+                a = not a
+                rospy.loginfo("Goal execution done!")
+        except rospy.ROSInterruptException:
+            rospy.loginfo("Navigation test finished.")
+
