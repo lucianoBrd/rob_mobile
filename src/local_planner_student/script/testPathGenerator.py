@@ -74,6 +74,8 @@ class PathGenerator:
 
         q = tf.transformations.quaternion_from_euler(0.0, 0.0, np.pi/2)
 
+        ps.pose.orientation.x = q[0]
+        ps.pose.orientation.y = q[1]
         ps.pose.orientation.w = q[3]
         ps.pose.orientation.z = q[2]
         ps.pose.position.x = 2.8
