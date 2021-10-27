@@ -1,6 +1,6 @@
-devel_space: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel
+devel_space: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel
 install: false
-install_space: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install
+install_space: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install
 profile: default
-source_space: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src
-workspace: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws
+source_space: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src
+workspace: /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET

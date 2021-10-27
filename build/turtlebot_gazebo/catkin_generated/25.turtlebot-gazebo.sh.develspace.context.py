@@ -2,7 +2,7 @@
 DEVELSPACE = True
 INSTALLSPACE = False
 
-CATKIN_DEVEL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/.private/turtlebot_gazebo'
+CATKIN_DEVEL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel/.private/turtlebot_gazebo'
 
 CATKIN_GLOBAL_BIN_DESTINATION = 'bin'
 CATKIN_GLOBAL_ETC_DESTINATION = 'etc'
@@ -20,14 +20,14 @@ CATKIN_PACKAGE_LIBEXEC_DESTINATION = 'lib/turtlebot_gazebo'
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python2.7/dist-packages/turtlebot_gazebo'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/turtlebot_gazebo'
 
-CMAKE_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_gazebo'
-CMAKE_CURRENT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_gazebo'
-CMAKE_CURRENT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/turtlebot_gazebo'
-CMAKE_INSTALL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install'
-CMAKE_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/turtlebot_gazebo'
+CMAKE_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_gazebo'
+CMAKE_CURRENT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_gazebo'
+CMAKE_CURRENT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/turtlebot_gazebo'
+CMAKE_INSTALL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install'
+CMAKE_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/turtlebot_gazebo'
 
 PROJECT_NAME = 'turtlebot_gazebo'
-PROJECT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_gazebo'
-PROJECT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/turtlebot_gazebo'
+PROJECT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_gazebo'
+PROJECT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/turtlebot_gazebo'
 
 PYTHON_EXECUTABLE = '/usr/bin/python2'

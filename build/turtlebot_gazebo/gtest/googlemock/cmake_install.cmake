@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_gazebo/gtest/googlemock/gtest/cmake_install.cmake")
+  include("/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_gazebo/gtest/googlemock/gtest/cmake_install.cmake")
 
 endif()
 

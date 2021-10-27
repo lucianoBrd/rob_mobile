@@ -67,14 +67,14 @@ set(navigation_stage_student_tp_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(navigation_stage_student_tp_SOURCE_PREFIX /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/global_planner_short_path_student/navigation_stage_student_tp)
-  set(navigation_stage_student_tp_DEVEL_PREFIX /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/.private/navigation_stage_student_tp)
+  set(navigation_stage_student_tp_SOURCE_PREFIX /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/global_planner_short_path_student/navigation_stage_student_tp)
+  set(navigation_stage_student_tp_DEVEL_PREFIX /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel/.private/navigation_stage_student_tp)
   set(navigation_stage_student_tp_INSTALL_PREFIX "")
   set(navigation_stage_student_tp_PREFIX ${navigation_stage_student_tp_DEVEL_PREFIX})
 else()
   set(navigation_stage_student_tp_SOURCE_PREFIX "")
   set(navigation_stage_student_tp_DEVEL_PREFIX "")
-  set(navigation_stage_student_tp_INSTALL_PREFIX /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install)
+  set(navigation_stage_student_tp_INSTALL_PREFIX /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install)
   set(navigation_stage_student_tp_PREFIX ${navigation_stage_student_tp_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install/lib;/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install/lib;/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

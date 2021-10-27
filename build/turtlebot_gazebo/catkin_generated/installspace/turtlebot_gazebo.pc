@@ -1,4 +1,4 @@
-prefix=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install
+prefix=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install
 
 Name: turtlebot_gazebo
 Description: Description of turtlebot_gazebo

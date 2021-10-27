@@ -2,7 +2,7 @@
 DEVELSPACE = False
 INSTALLSPACE = True
 
-CATKIN_DEVEL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/.private/turtlebot_stage'
+CATKIN_DEVEL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel/.private/turtlebot_stage'
 
 CATKIN_GLOBAL_BIN_DESTINATION = 'bin'
 CATKIN_GLOBAL_ETC_DESTINATION = 'etc'
@@ -20,14 +20,14 @@ CATKIN_PACKAGE_LIBEXEC_DESTINATION = 'lib/turtlebot_stage'
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python2.7/dist-packages/turtlebot_stage'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/turtlebot_stage'
 
-CMAKE_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_stage'
-CMAKE_CURRENT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_stage'
-CMAKE_CURRENT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/turtlebot_stage'
-CMAKE_INSTALL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/install'
-CMAKE_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/turtlebot_stage'
+CMAKE_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_stage'
+CMAKE_CURRENT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_stage'
+CMAKE_CURRENT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/turtlebot_stage'
+CMAKE_INSTALL_PREFIX = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/install'
+CMAKE_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/turtlebot_stage'
 
 PROJECT_NAME = 'turtlebot_stage'
-PROJECT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/build/turtlebot_stage'
-PROJECT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/src/turtlebot_stage'
+PROJECT_BINARY_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/build/turtlebot_stage'
+PROJECT_SOURCE_DIR = '/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/src/turtlebot_stage'
 
 PYTHON_EXECUTABLE = '/usr/bin/python2'

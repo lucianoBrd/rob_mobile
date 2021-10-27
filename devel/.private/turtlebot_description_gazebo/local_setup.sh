@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/.private/turtlebot_description_gazebo}
+: ${_CATKIN_SETUP_DIR:=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel/.private/turtlebot_description_gazebo}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

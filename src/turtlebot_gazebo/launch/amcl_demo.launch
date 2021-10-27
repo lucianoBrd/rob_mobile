@@ -46,7 +46,7 @@
   -->
 
 
-<include file="$(find turtlebot_gazebo)/launch/navigation/move_base_no-config.launch.xml">
+  <include file="$(find turtlebot_gazebo)/launch/navigation/move_base_inflate_layer.launch.xml">
     <arg name="laser_topic" default="$(arg scan_topic)"/>
   </include>
 

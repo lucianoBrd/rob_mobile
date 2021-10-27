@@ -1,4 +1,4 @@
-prefix=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/catkin_ws/devel/.private/navigation_stage_student_tp
+prefix=/fs03/share/users/aykel.cheniour/home/Bureau/ROB_MOB/RobMob_TP_CHENIOUR_BURDET/devel/.private/navigation_stage_student_tp
 
 Name: navigation_stage_student_tp
 Description: Description of navigation_stage_student_tp
