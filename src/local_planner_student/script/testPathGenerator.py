@@ -9,6 +9,9 @@ from geometry_msgs.msg import PoseStamped
 from nav_msgs.msg import Path
 from std_msgs.msg import Bool
 from copy import deepcopy
+import numpy as np
+import tf
+from tf.transformations import euler_from_quaternion, quaternion_from_euler
 
 from local_planner_student.srv import Path as PathToGoal 
 
@@ -67,10 +70,12 @@ class PathGenerator:
 
         ps.pose.position.x = 4.0
         ps.pose.position.y = 3.0
-        pm.poses.append( deepcopy(ps) )   
-        
-        ps.pose.orientation.w = 1.0
-        ps.pose.orientation.z = 0.0
+        pm.poses.append( deepcopy(ps) )
+
+        q = tf.transformations.quaternion_from_euler(0.0, 0.0, np.pi/2)
+
+        ps.pose.orientation.w = q[3]
+        ps.pose.orientation.z = q[2]
         ps.pose.position.x = 2.8
         ps.pose.position.y = 2.8
         pm.poses.append( deepcopy(ps) )                   

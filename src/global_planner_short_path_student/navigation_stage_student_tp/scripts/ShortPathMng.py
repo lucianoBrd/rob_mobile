@@ -140,6 +140,7 @@ class ShortPathMng:
                         for l in range((j - factor), (j + factor)):
                             if (k < len(map)) and (k > -1) and (l < len(map[k])) and (l > -1):
                                 new_inflated_map[k][l] = self.MAP_OBSTACLE_VALUE
+                                self.pub_marker.publish((self.createAlgoTxtMarker(self.shortPathMethodeSelected, k, l)))
         # return map
         ## UNCOMMENT LINE BELLOW TO TEST YOUR INFLATED MAP
         return new_inflated_map
